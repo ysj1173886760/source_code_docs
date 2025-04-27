@@ -2,6 +2,7 @@
 title: 边
 parent: Graphiti
 nav_order: 3
+layout: default
 ---
 
 # Chapter 3: 边（Edges）

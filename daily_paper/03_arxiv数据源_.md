@@ -2,6 +2,7 @@
 title: ArXiv数据源
 parent: DailyPaper
 nav_order: 3
+layout: default
 ---
 
 # Chapter 3: ArXiv数据源

@@ -2,6 +2,7 @@
 title: MCP服务器
 parent: Graphiti
 nav_order: 7
+layout: default
 ---
 
 # Chapter 7: MCP服务器（MCP Server）

@@ -2,6 +2,7 @@
 title: 数据存储与索引
 parent: Graphiti
 nav_order: 4
+layout: default
 ---
 
 # Chapter 4: 数据存储与索引（Data Storage and Indexing）

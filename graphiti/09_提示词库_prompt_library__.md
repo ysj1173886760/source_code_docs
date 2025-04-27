@@ -2,6 +2,7 @@
 title: 提示词库
 parent: Graphiti
 nav_order: 9
+layout: default
 ---
 
 # Chapter 9: 提示词库（Prompt Library）

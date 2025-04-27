@@ -2,6 +2,7 @@
 title: 语言模型客户端
 parent: Graphiti
 nav_order: 5
+layout: default
 ---
 
 # Chapter 5: 语言模型客户端（LLM Client）

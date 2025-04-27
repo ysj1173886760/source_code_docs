@@ -2,6 +2,7 @@
 title: LLM摘要生成器
 parent: DailyPaper
 nav_order: 4
+layout: default
 ---
 
 # Chapter 4: LLM摘要生成器

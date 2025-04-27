@@ -2,6 +2,7 @@
 title: 搜索配置
 parent: Graphiti
 nav_order: 8
+layout: default
 ---
 
 # Chapter 8: 搜索配置（Search Configuration）

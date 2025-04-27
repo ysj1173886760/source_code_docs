@@ -2,6 +2,7 @@
 title: DAG流水线处理器
 parent: DailyPaper
 nav_order: 2
+layout: default
 ---
 
 # Chapter 2: DAG流水线处理器

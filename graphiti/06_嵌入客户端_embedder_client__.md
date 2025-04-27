@@ -2,6 +2,7 @@
 title: 嵌入客户端
 parent: Graphiti
 nav_order: 6
+layout: default
 ---
 
 # Chapter 6: 嵌入客户端（Embedder Client）

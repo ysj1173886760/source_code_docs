@@ -2,6 +2,7 @@
 title: 节点
 parent: Graphiti
 nav_order: 2
+layout: default
 ---
 
 # Chapter 2: 节点（Nodes）

@@ -2,6 +2,7 @@
 title: 知识图谱框架
 parent: Graphiti
 nav_order: 1
+layout: default
 ---
 
 # Chapter 1: 知识图谱框架Graphiti
