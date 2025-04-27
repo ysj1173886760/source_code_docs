@@ -5,11 +5,10 @@ theme: just-the-docs
 url: https://ysj1173886760.github.io/source_code_docs/
 
 # 导航配置
-nav_external_links:
-  - title: 每日论文
-    url: /daily_paper/
-  - title: Graphiti
-    url: /graphiti/
+nav:
+  - Home: index.md       # Link to your main docs index
+  - DailyPaper: daily_paper/index.md
+  - Graphiti: graphiti/index.md
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
