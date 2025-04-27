@@ -7,8 +7,13 @@ url: https://ysj1173886760.github.io/source_code_docs/
 # 导航配置
 nav:
   - Home: index.md       # Link to your main docs index
-  - DailyPaper: daily_paper/index.md
-  - Graphiti: graphiti/index.md
+
+# Mermaid settings
+mermaid:
+  version: "11.6.0"  # Pick the version you want
+  # Default configuration
+  config: |
+    directionLR
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template

@@ -1,3 +1,9 @@
+---
+title: 提示词库
+parent: Graphiti
+nav_order: 9
+---
+
 # Chapter 9: 提示词库（Prompt Library）
 
 在上一章，我们了解了Graphiti中的[搜索配置（Search Configuration）](08_搜索配置_search_configuration__.md)，它就像图书馆的搜索指引系统，帮助我们在知识图谱中高效准确地找到所需信息。接下来，让我们一同探索Graphiti中的提示词库（Prompt Library），看看它在知识图谱应用中发挥着怎样的作用。

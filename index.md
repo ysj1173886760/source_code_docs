@@ -1,5 +1,5 @@
 ---
-title: 文档中心
+title: Home
 layout: home
 ---
 
@@ -9,7 +9,7 @@ layout: home
 
 ## 文档分类
 
-- [每日论文](/daily_paper/) - 论文订阅助手
+- [DailyPaper](/daily_paper/) - 论文订阅助手
 - [Graphiti](/graphiti/) - Graphiti 相关文档
 
 ## 快速开始

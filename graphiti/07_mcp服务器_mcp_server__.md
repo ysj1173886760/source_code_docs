@@ -1,6 +1,12 @@
+---
+title: MCP服务器
+parent: Graphiti
+nav_order: 7
+---
+
 # Chapter 7: MCP服务器（MCP Server）
 
-在上一章，我们探索了Graphiti中的[嵌入客户端（Embedder Client）](06_嵌入客户端_embedder_client__.md)，了解到它能为节点和边生成嵌入向量，实现知识图谱的语义搜索。接下来，我们将走进Graphiti的“MCP服务器（MCP Server）”，看看它在整个知识图谱框架中起到什么样的作用。
+在上一章，我们探索了Graphiti中的[嵌入客户端（Embedder Client）](06_嵌入客户端_embedder_client__.md)，了解到它能为节点和边生成嵌入向量，实现知识图谱的语义搜索。接下来，我们将走进Graphiti的"MCP服务器（MCP Server）"，看看它在整个知识图谱框架中起到什么样的作用。
 
 在许多人工智能应用场景中，比如智能客服系统，AI助手需要借助知识图谱中的丰富信息来准确回答用户问题。但AI助手如何与知识图谱顺畅交互呢？MCP服务器就像一座桥梁，通过Model Context Protocol协议，让AI助手能够与Graphiti的知识图谱功能进行交互。
 

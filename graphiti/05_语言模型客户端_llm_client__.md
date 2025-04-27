@@ -1,3 +1,9 @@
+---
+title: 语言模型客户端
+parent: Graphiti
+nav_order: 5
+---
+
 # Chapter 5: 语言模型客户端（LLM Client）
 
 在上一章，我们学习了Graphiti中的[数据存储与索引（Data Storage and Indexing）](04_数据存储与索引_data_storage_and_indexing__.md)，了解到它能将知识图谱的数据有序存储在Neo4j数据库中，并通过建立索引优化查询性能。接下来，我们将探索Graphiti中的语言模型客户端（LLM Client），看看它如何与知识图谱相结合，为智能应用提供更强大的功能。
@@ -6,13 +12,13 @@
 
 ## 关键概念
 ### LLMConfig类
-这个类用于配置与语言学习模型（LLM）交互所需的参数，就好比是给语言模型客户端（LLM Client）设定一些必要的 “使用规则”。它存储了访问LLM API所需的认证密钥（api_key），要使用的具体LLM模型名称（model），以及LLM API服务的基本URL（base_url）等信息。比如，如果你使用的是OpenAI的模型，那么base_url可能就是“https://api.openai.com” 。同时，还可以设置温度（temperature）和最大令牌数（max_tokens）等参数。温度这个参数影响生成文本的随机性，数值越高越随机；最大令牌数则限制了生成文本的长度。
+这个类用于配置与语言学习模型（LLM）交互所需的参数，就好比是给语言模型客户端（LLM Client）设定一些必要的 "使用规则"。它存储了访问LLM API所需的认证密钥（api_key），要使用的具体LLM模型名称（model），以及LLM API服务的基本URL（base_url）等信息。比如，如果你使用的是OpenAI的模型，那么base_url可能就是"https://api.openai.com" 。同时，还可以设置温度（temperature）和最大令牌数（max_tokens）等参数。温度这个参数影响生成文本的随机性，数值越高越随机；最大令牌数则限制了生成文本的长度。
 
 ### LLMClient类
 这是一个抽象类，是与语言模型进行交互的基础类。它初始化时接受LLMConfig配置对象和一个是否启用缓存（cache）的布尔值。如果启用缓存，会在本地创建一个缓存目录（DEFAULT_CACHE_DIR为 './llm_cache'），用于存储与语言模型交互的结果。这样，当再次遇到相同的请求时，就可以直接从缓存中获取结果，提高响应速度，就像把经常用的东西放在伸手就能拿到的地方。
 
 ## 使用语言模型客户端解决示例用例
-假设我们已经搭建好了知识图谱，现在要实现一个简单的自然语言查询功能，比如查询 “公司去年最畅销的产品是什么？”
+假设我们已经搭建好了知识图谱，现在要实现一个简单的自然语言查询功能，比如查询 "公司去年最畅销的产品是什么？"
 
 ### 配置LLMClient
 ```python
@@ -44,7 +50,7 @@ messages = [
 response = await llm_client.generate_response(messages)
 print(response)
 ```
-解释：从`graphiti_core.prompts.models`导入`Message`类，构建一个消息列表，其中包含用户的问题。然后调用`llm_client`的`generate_response`方法获取语言模型的响应，并打印出来。这里的响应会是语言模型根据问题生成的答案，比如“公司去年最畅销的产品是XX型号的手机”。
+解释：从`graphiti_core.prompts.models`导入`Message`类，构建一个消息列表，其中包含用户的问题。然后调用`llm_client`的`generate_response`方法获取语言模型的响应，并打印出来。这里的响应会是语言模型根据问题生成的答案，比如"公司去年最畅销的产品是XX型号的手机"。
 
 ## 内部实现
 ### 非代码流程

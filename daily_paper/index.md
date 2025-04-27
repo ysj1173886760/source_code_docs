@@ -10,8 +10,6 @@ has_children: true
 **daily_paper** 是一个自动化论文处理系统，主要用于*每日抓取*、*智能摘要*和*推送*学术论文。系统通过**DAG流水线**协调多个算子，从ArXiv获取论文数据，使用**大语言模型**生成中文摘要，并最终通过飞书推送给用户。核心功能包括*数据获取*、*状态管理*和*AI辅助分析*，帮助用户高效跟踪最新研究成果。
 
 
-**Source Repository:** [None](None)
-
 ```mermaid
 flowchart TD
     A0["DAG流水线处理器"]

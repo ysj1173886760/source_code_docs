@@ -1,3 +1,9 @@
+---
+title: ArXiv数据源
+parent: DailyPaper
+nav_order: 3
+---
+
 # Chapter 3: ArXiv数据源
 
 在[第二章](02_dag流水线处理器_.md)中，我们学会了如何搭建论文处理的"流水线工厂"。现在我们需要稳定的"原材料供应商"——这就是本章的主角**ArXiv数据源**，它能从全球最大的预印本平台ArXiv为我们抓取最新学术论文。
